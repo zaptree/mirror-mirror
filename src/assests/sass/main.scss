@@ -1,0 +1,20 @@
+html {
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Courier New, Courier, monospace;
+    overflow: hidden;
+    color: white;
+
+    div {
+      box-sizing: border-box;
+    }
+
+    //import containers
+    @import './containers/_app.scss';
+
+    // import components
+    @import './components/_greeting.scss';
+  }
+}

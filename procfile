@@ -1,0 +1,2 @@
+api: npm run react-start
+run: npm run electron-dev
