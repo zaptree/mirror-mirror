@@ -46,13 +46,15 @@
   "homepage": "./",
   "main": "src/electron.js",
   "scripts": {
+    "start": "nf start",
     "react-start": "node scripts/start.js",
-    "build":
-      "node scripts/build.js && electron-packager . --overwrite --out packages/mirror-mirror",
-    "test": "node scripts/test.js --env=jsdom",
+    "build": "node scripts/build.js",
+    "build:package":
+      "npm run build && electron-packager . --overwrite --out packages/mirror-mirror",
+    "build:run": "npm run build && npm run electron",
     "electron": "electron .",
     "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
-    "start": "nf start"
+    "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
     "electron-packager": "^9.1.0",
