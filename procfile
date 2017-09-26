@@ -1,2 +1,2 @@
 api: npm run react-start
-run: npm run electron-dev
+run: node src/wait-for-react.js
