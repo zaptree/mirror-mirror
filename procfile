@@ -1,2 +1,2 @@
 api: npm run react-start
-run: node src/wait-for-react.js
+run: node scripts/wait-for-react.js
