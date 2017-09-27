@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# Current build status: [![CircleCI](https://circleci.com/gh/cyb3rsyph0n/mirror-mirror.svg?style=badge)](https://circleci.com/gh/cyb3rsyph0n/mirror-mirror)
 
 ## Getting started
 
