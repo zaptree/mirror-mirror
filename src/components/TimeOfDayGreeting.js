@@ -11,7 +11,7 @@ export default function Greeting({ greetings }) {
     greetingMessage = greetings[2];
   }
 
-  return <div className="friendly-message">{greetingMessage}</div>;
+  return <div className="timeofdaygreeting-container">{greetingMessage}</div>;
 }
 
 Greeting.defaultProps = {
