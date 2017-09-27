@@ -16,7 +16,7 @@ app.on('ready', () => {
     url.format({
       pathname: path.join(__dirname, '../build/index.html'),
       protocol: 'file:',
-      slashes: true
+      slashes: true,
     });
 
   // Create the browser window.
@@ -29,7 +29,7 @@ app.on('ready', () => {
   // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
-  mainWindow.on('closed', function() {
+  mainWindow.on('closed', () => {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
@@ -40,6 +40,6 @@ app.on('ready', () => {
 });
 
 // Quit when all windows are closed.
-app.on('window-all-closed', function() {
+app.on('window-all-closed', () => {
   app.quit();
 });

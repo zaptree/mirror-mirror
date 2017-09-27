@@ -1,3 +1,8 @@
 export default function appReducer(state = {}, action) {
-  return state;
+  const { type } = action;
+
+  switch (type) {
+    default:
+      return state;
+  }
 }
