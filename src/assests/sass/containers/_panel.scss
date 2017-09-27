@@ -1,0 +1,23 @@
+.panel-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  min-height: 100vh;
+  min-width: 100vw;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  transition: left ease-in 0.5s;
+
+  &.offLeft {
+    left: calc(-1 * 100vw);
+  }
+
+  &.offRight {
+    left: 100vw;
+  }
+}
