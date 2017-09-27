@@ -33,5 +33,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      # run tests!
+      # mv sample config file
+      - run: mv ./sample.config.js ./config.js
+      
+      # run build
       - run: yarn run build:package
