@@ -13,7 +13,7 @@
 /packages
 
 # config file
-/config.js
+/mirror-mirror.config.js
 
 # misc
 .DS_Store

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import appConfig from 'config'; // eslint-disable-line
+import getAppConfig from '../constants/config'; // eslint-disable-line
 
 import Panel from './Panel';
 
@@ -8,7 +8,7 @@ class App extends Component {
     super();
 
     this.state = {
-      currentPanel: appConfig.defaultPanel || 0,
+      currentPanel: getAppConfig().defaultPanel || 0,
     };
 
     this.slidePanel = this.slidePanel.bind(this);
@@ -33,8 +33,8 @@ class App extends Component {
     let newPanel = currentPanel + direction;
 
     if (newPanel < 0) {
-      newPanel = appConfig.panels.length - 1;
-    } else if (newPanel >= appConfig.panels.length) {
+      newPanel = getAppConfig().panels.length - 1;
+    } else if (newPanel >= getAppConfig().panels.length) {
       newPanel = 0;
     }
 
@@ -46,7 +46,7 @@ class App extends Component {
 
     return (
       <div className="app-container">
-        {appConfig.panels.map((p, index) => (
+        {getAppConfig().panels.map((p, index) => (
           <Panel
             key={index}
             left={index < currentPanel}

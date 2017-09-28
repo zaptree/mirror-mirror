@@ -2,7 +2,7 @@
 
 ## Getting started
 
-* Create a local config file in the root named `config.js` and paste the javascript from below
+* Create a local config file in the root named `mirror-mirror.config.js` and paste the javascript from below or rename `sample.config.js` to `mirror-mirror.config.js`
 
 ```
 module.exports = {
