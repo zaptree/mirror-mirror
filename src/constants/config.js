@@ -7,6 +7,7 @@ let config = null;
 function validateConfig() {
   const componentSchema = Joi.object({
     name: Joi.string().required(),
+    placement: Joi.string(),
     options: Joi.object(),
     components: Joi.array(),
   }).required();

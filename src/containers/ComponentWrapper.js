@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
-export default function ComponentWrapper({ Component, components, style, options }) {
+export default function ComponentWrapper({ Component, components, placement, options }) {
   return (
-    <div className={style}>
+    <div className={classNames('componentWrapper', { [placement]: placement !== '' })}>
       <Component {...options}>
         {components &&
           Array.isArray(components) &&
@@ -21,13 +22,13 @@ export default function ComponentWrapper({ Component, components, style, options
 
 ComponentWrapper.defaultProps = {
   components: [],
-  style: undefined,
+  placement: 'top left',
   options: [],
 };
 
 ComponentWrapper.propTypes = {
   Component: PropTypes.func.isRequired,
   components: PropTypes.arrayOf(PropTypes.object),
-  style: PropTypes.string,
+  placement: PropTypes.string,
   options: PropTypes.objectOf(PropTypes.any),
 };

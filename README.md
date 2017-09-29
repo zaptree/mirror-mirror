@@ -13,6 +13,7 @@ module.exports = {
       components: [
         {
           name: 'TimeOfDayGreeting',
+          placement: 'bottom center',
           options: {
             greetings: ['Good Morning', 'Good Afternoon', 'Good Evening'],
           },

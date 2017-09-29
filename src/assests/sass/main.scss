@@ -14,6 +14,7 @@ html {
     //import containers
     @import './containers/_app.scss';
     @import './containers/_panel.scss';
+    @import './containers/_componentWrapper.scss';
 
     // import components
     @import './components/_timeOfDayGreeting.scss';
